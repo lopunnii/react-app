@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import List from './List.js'
+import { IncrementButton, ChangeColorButton } from './OdinHooksPractice.js'
 import './App.css';
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
       </header>
 
       <List></List>
+        <h2>The Odin Project Hooks Practice</h2>
+      <IncrementButton></IncrementButton>
+      <ChangeColorButton></ChangeColorButton>
 
       <footer className="App-footer">
         <img src={logo} className="App-logo" alt="logo" />
