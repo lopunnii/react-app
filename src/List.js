@@ -1,18 +1,20 @@
-function Item({ name, isComplete}) {
-    return <li>{isComplete ? (<del>{name + ' ✔'}</del>) : name}</li>;
-}
+import { useState } from 'react';
 
-function handleClick() {
-    return console.log("Clicked!")
+function Item({ name }) {
+  const [isComplete, setIsComplete] = useState(false);
+  function handleClick() {
+    setIsComplete(!isComplete);
+}
+    return <li onClick={handleClick}>{isComplete ? (<del>{name + ' ✔'}</del>) : name}</li>;
 }
 
 export default function List() {
 return (
 <div className="list-box">
 <ul className="list">
-  <Item name="Do Yoga" onClick={handleClick} isComplete={true}></Item>
-  <Item name="Cook Curry" onClick={handleClick} isComplete={true}></Item>
-  <Item name="Study React" onClick={handleClick} isComplete={false}></Item>
+  <Item name="Do Yoga"></Item>
+  <Item name="Cook Curry"></Item>
+  <Item name="Study React"></Item>
 </ul>
 </div>
 );
