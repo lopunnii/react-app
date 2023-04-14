@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import ToDoListApp from './List.js'
+import ToDoListApp from './ToDoList.js'
 import { IncrementButton, ChangeColorButton } from './OdinHooksPractice.js'
 import PokemonStarters from './PokemonStarters';
 import './App.css';
