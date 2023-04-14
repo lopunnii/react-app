@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import List from './List.js'
+import ToDoListApp from './List.js'
 import { IncrementButton, ChangeColorButton } from './OdinHooksPractice.js'
 import PokemonStarters from './PokemonStarters';
 import './App.css';
@@ -7,14 +7,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>To Do List</h1>
-      </header>
+      <ToDoListApp></ToDoListApp>
 
-      <List></List>
-        <h2>The Odin Project Hooks Practice</h2>
+      <h2>The Odin Project Hooks Practice</h2>
       <IncrementButton></IncrementButton>
       <ChangeColorButton></ChangeColorButton>
+
       <PokemonStarters></PokemonStarters>
 
       <footer className="App-footer">
