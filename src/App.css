@@ -11,6 +11,10 @@
   justify-content: center;
 }
 
+.task {
+  display: block;
+}
+
 /* Logo + Learn React */
 .App-logo {
   height: 30px;
