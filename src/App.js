@@ -7,14 +7,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      {/* To Do List */}
       <ToDoListApp></ToDoListApp>
 
-      <h2>The Odin Project Hooks Practice</h2>
+      {/* The Odin Project練習 */}
+      <h2>The Odin Project Hooks 練習</h2>
       <IncrementButton></IncrementButton>
       <ChangeColorButton></ChangeColorButton>
 
+      {/* Props渡し練習 */}
+      <h2>Props渡し練習</h2>
       <PokemonStarters></PokemonStarters>
 
+      {/* フッター */}
       <footer className="App-footer">
         <img src={logo} className="App-logo" alt="logo" />
         <a
