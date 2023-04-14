@@ -29,7 +29,7 @@ return (
 
 // 初期タスク
 const initialTasks = [
-  {id: 0, text: "Do Yoga"},
-  {id: 1, text: "Cook Curry"},
-  {id: 2, text: "Study React"},
+  {id: 0, text: "Do Yoga", isComplete: false},
+  {id: 1, text: "Cook Curry", isComplete: false},
+  {id: 2, text: "Study React", isComplete: false},
 ];
