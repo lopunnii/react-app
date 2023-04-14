@@ -1,25 +1,19 @@
 import { useState } from 'react';
 
-// export function TaskList({ tasks }) {
-//     const [isComplete, setIsComplete] = useState(false);
-//     function handleClick() {
-//       setIsComplete(!isComplete);
-//   }
-//       return (
-//       <label className="task">
-//         <input type="checkbox" onClick={handleClick} checked={isComplete}></input>
-//         {isComplete ? (<del>{tasks.text}</del>) : tasks.text}
-//       </label>
-//       )
-  
-//   }
-
   export function TaskList( {tasks} ) {
+    const [isComplete, setIsComplete] = useState(false);
+
+    function handleClick() {
+    setIsComplete(!isComplete);
+    }
     return (
-  <ul>
-  {tasks.map(task => (
-    <li key={task.id}>{task.text}</li>
-  ))}
-  </ul>
+      <div>
+      {tasks.map(task => (
+        <label className="task" key={task.id}>
+          <input onClick={handleClick} checked={isComplete} type="checkbox"></input>
+          {isComplete ? (<del>{task.text}</del>) : task.text}
+        </label>
+      ))}
+      </div>
     );
   }
